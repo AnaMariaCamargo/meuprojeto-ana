@@ -55,7 +55,7 @@ public class Filme {
         return atores;
     }
 
-    boolean clasindicativa(int idade, int classificacao) {
+    boolean indicado(int idade, int classificacao) {
         if (idade >= classificacao) {
             JOptionPane.showMessageDialog(null, "\nVocê pode assistir esse filme.");
             return true;
@@ -65,12 +65,11 @@ public class Filme {
         }
     }
 
-    void dur(int duracao) {
+    void duracaofilme(int duracao) {
         if (duracao >= 60) {
             JOptionPane.showMessageDialog(null, "\nEsse é um filme de longa duração.");
         } else {
             JOptionPane.showMessageDialog(null, "\nEsse é um filme de curta duração.");
         }
     }
-
 }

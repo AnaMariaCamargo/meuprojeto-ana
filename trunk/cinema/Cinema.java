@@ -7,13 +7,11 @@ public class Cinema {
     public static void main(String[] args) {
         Filme f = new Filme();
         Ator a = new Ator();
+        
+        //FILME
 
         String nome, genero, atores;
         int classificacao, duracao, idade;
-
-        String nomeat, nacionalidade, oscar, datanasc, totalfil;
-        float cache, filmeultimo;
-        Boolean osc = true;
 
         nome = (JOptionPane.showInputDialog("Digite as informações do filme\nNome: "));
         classificacao = (Integer.parseInt(JOptionPane.showInputDialog("Classificação indicativa: ")));
@@ -33,37 +31,42 @@ public class Cinema {
         JOptionPane.showMessageDialog(null, "Dados do Filme\n\nNome: " + nome + "\nClassificação Indicativa: " + classificacao + " anos\nDuração: "
                 + duracao + " min\nGênero: " + genero + "\nAtores: " + atores);
 
-        f.clasindicativa(idade, classificacao);
-        f.dur(duracao);
+        f.indicado(idade, classificacao);
+        f.duracaofilme(duracao);
+        
+        //ATOR
+        
+        String nomeator, nacional, oscar, datanasc, totalfilme;
+        float cache, filmeultimoano;
+        Boolean osc = true;
 
-        nomeat = (JOptionPane.showInputDialog("Digite as informações do ator\nNome: "));
-        nacionalidade = (JOptionPane.showInputDialog("Nacionalidade: "));
+        nomeator = (JOptionPane.showInputDialog("Digite as informações do ator\nNome: "));
+        nacional = (JOptionPane.showInputDialog("Nacionalidade: "));
         cache = ((Float.parseFloat(JOptionPane.showInputDialog("Cachê: R$ "))));
         datanasc = (JOptionPane.showInputDialog("Data de nascimento: "));
-        totalfil = (JOptionPane.showInputDialog("Total de filmes: "));
-        filmeultimo = ((Float.parseFloat(JOptionPane.showInputDialog("Quantidade de filmes do último ano: "))));
+        totalfilme = (JOptionPane.showInputDialog("Total de filmes: "));
+        filmeultimoano = ((Float.parseFloat(JOptionPane.showInputDialog("Quantidade de filmes do último ano: "))));
         oscar = (JOptionPane.showInputDialog("Ele já ganhou o oscar? Sim ou Não? "));
         
-        a.atribuirNomeat(nomeat);
-        a.atribuirNacionalidade(nacionalidade);
+        a.atribuirNomeator(nomeator);
+        a.atribuirNacional(nacional);
         a.atribuirCache(cache);
         a.atribuirDatanasc(datanasc);
-        a.atribuirTotalfil(totalfil);
-        a.atribuiFilmeultimo(filmeultimo);
+        a.atribuirTotalfilme(totalfilme);
+        a.atribuiFilmeultimoano(filmeultimoano);
         a.atribuirOscar(oscar);
 
-        if (oscar.equalsIgnoreCase("Sim")) {
+        if (oscar.equalsIgnoreCase("sim")) {
             osc = true;
         } else {
             osc = false;
         }
 
-        JOptionPane.showMessageDialog(null, "Dados do Ator\n\nNome: " + nomeat + "\nNacionalidade: "
-                + nacionalidade + "\nData de nascimento: " + datanasc + "\nCachê: R$ " + cache + "\nTotal de fil"
-                + "mes realizados: " + totalfil + "\nTotal de filmes do ultimo ano: " + filmeultimo
+        JOptionPane.showMessageDialog(null, "Dados do Ator\n\nNome: " + nomeator + "\nNacionalidade: "
+                + nacional + "\nData de nascimento: " + datanasc + "\nCachê: R$ " + cache + "\nTotal de fil"
+                + "mes realizados: " + totalfilme + "\nTotal de filmes do ultimo ano: " + filmeultimoano
                 + "\nEsse ator já ganhou o oscar - True: Verdadeiro - Sim, False: Falso - Não : " + osc);
-
-        a.ganhos(cache, filmeultimo);
+        a.ganhosultimoano(cache, filmeultimoano);
 
     }
 }
