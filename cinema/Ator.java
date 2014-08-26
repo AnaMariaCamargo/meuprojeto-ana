@@ -4,23 +4,23 @@ import javax.swing.JOptionPane;
 
 public class Ator {
 
-    String nomeat, nacionalidade, datanasc, oscar, totalfil;
-    float cache, filmeultimo;
+    String nomeator, nacional, datanasc, oscar, totalfilme;
+    float cache, filmeultimoano;
 
-    void atribuirNomeat(String valor) {
-        nomeat = valor;
+    void atribuirNomeator(String valor) {
+        nomeator = valor;
     }
 
-    String returnNomeat() {
-        return nomeat;
+    String returnNomeator() {
+        return nomeator;
     }
 
-    void atribuirNacionalidade(String valor) {
-        nacionalidade = valor;
+    void atribuirNacional(String valor) {
+        nacional = valor;
     }
 
-    String returnNacionalidade() {
-        return nacionalidade;
+    String returnNacional() {
+        return nacional;
     }
 
     void atribuirCache(Float valor) {
@@ -39,20 +39,20 @@ public class Ator {
         return datanasc;
     }
 
-    void atribuirTotalfil(String valor) {
-        totalfil = valor;
+    void atribuirTotalfilme(String valor) {
+        totalfilme = valor;
     }
 
-    String returnTotalFilm() {
-        return totalfil;
+    String returnTotalFilme() {
+        return totalfilme;
     }
 
-    void atribuiFilmeultimo(Float valor) {
-        filmeultimo = valor;
+    void atribuiFilmeultimoano(Float valor) {
+        filmeultimoano = valor;
     }
 
-    Float returnFilmeultimo() {
-        return filmeultimo;
+    Float returnFilmeultimoano() {
+        return filmeultimoano;
     }
 
     void atribuirOscar(String valor) {
@@ -63,7 +63,7 @@ public class Ator {
         return oscar;
     }
 
-    void ganhos(float cache, float filmeultimo) {
-        JOptionPane.showMessageDialog(null, "\nOs ganhos do último ano foram: R$" + cache * filmeultimo + ".");
+    void ganhosultimoano(float cache, float filmeultimoano) {
+        JOptionPane.showMessageDialog(null, "\nOs ganhos do último ano foram: R$" + cache * filmeultimoano + ".");
     }
 }
