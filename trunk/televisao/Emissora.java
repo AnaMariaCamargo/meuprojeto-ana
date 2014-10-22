@@ -1,4 +1,4 @@
-package televisao;
+package Televisao;
 
 public class Emissora {
 
@@ -24,4 +24,5 @@ public class Emissora {
         nomeemissora = null;
         tvabertaoufechada = "Fechada";
     }
+
 }
