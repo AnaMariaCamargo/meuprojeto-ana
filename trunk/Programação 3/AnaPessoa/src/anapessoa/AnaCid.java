@@ -9,12 +9,12 @@ public class AnaCid {
         Cidade cidade = new Cidade();
         while (cidade.getCodigocidade() == null) {
             try {
-                cidade.setCodigocidade(Integer.parseInt(JOptionPane.showInputDialog("Digite o Código: ")));
+                cidade.setCodigocidade(Integer.parseInt(JOptionPane.showInputDialog("Código: ")));
             } catch (Exception ex) {
                 JOptionPane.showMessageDialog(null, "O código só pode ser preenchido com números.");
             }
         }
-        cidade.setNomecidade(JOptionPane.showInputDialog("Digite o Nome: "));
-        JOptionPane.showMessageDialog(null, "Cidade\nCódigo: " + cidade.getCodigocidade() + "\nNome: " + cidade.getNomecidade());
+        cidade.setNomecidade(JOptionPane.showInputDialog("Nome: "));
+        JOptionPane.showMessageDialog(null, "Código: " + cidade.getCodigocidade() + "\nNome: " + cidade.getNomecidade());
     }
 }
