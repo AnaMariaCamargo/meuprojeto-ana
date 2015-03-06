@@ -28,11 +28,11 @@ public class cidadeListar extends javax.swing.JFrame {
         lista.add(item);
         item = new Cidade();
         item.setCodigocidade(2);
-        item.setNomecidade("Pelotas");
+        item.setNomecidade("Hulha Negra");
         lista.add(item);
         item = new Cidade();
         item.setCodigocidade(3);
-        item.setNomecidade("Porto Alegre");
+        item.setNomecidade("Pelotas");
         lista.add(item);
         DefaultTableModel modelo = (DefaultTableModel)tabelacidade.getModel();
         Object[] linha = new Object[modelo.getColumnCount()];

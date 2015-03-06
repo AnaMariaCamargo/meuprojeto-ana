@@ -10,14 +10,14 @@ public class AnaPes {
         while (pessoa.getCodigo() == null) {
             try {
                 //Pra executar
-                pessoa.setCodigo(Integer.parseInt(JOptionPane.showInputDialog("Digite o Código: ")));
+                pessoa.setCodigo(Integer.parseInt(JOptionPane.showInputDialog("Código: ")));
             } catch (Exception ex) {
                 //Fazer se der erro
                 JOptionPane.showMessageDialog(null, "O código só pode ser preenchido com números.");
             }
         }
-        pessoa.setNome(JOptionPane.showInputDialog("Digite o Nome: "));
-        pessoa.setSexo(JOptionPane.showInputDialog("Digite o Sexo: "));
+        pessoa.setNome(JOptionPane.showInputDialog("Nome: "));
+        pessoa.setSexo(JOptionPane.showInputDialog("Sexo: "));
         JOptionPane.showMessageDialog(null, "Código: " + pessoa.getCodigo() + "\nNome: " + pessoa.getNome() + "\nSexo: " + pessoa.getSexo());
     }
 }
